@@ -1,0 +1,30 @@
+$mobile-small-screen       = 320px  // Smartphones pequenos
+$mobile-medium-screen      = 480px  // Smartphones médios
+$mobile-large-screen       = 640px  // Smartphones grandes
+
+$tablet-small-screen       = 768px  // Tablets pequenos
+$tablet-medium-screen      = 1024px // Tablets médios (paisagem)
+$tablet-large-screen       = 1280px // Tablets grandes
+
+$desktop-small-screen      = 1366px // Desktops pequenos e laptops
+$desktop-medium-screen     = 1440px // Desktops médios
+$desktop-large-screen      = 1680px // Desktops grandes
+$default-screen            = 1920px // Monitores Full HD e superiores
+
+// Media Queries
+$default        = 'only screen and (max-width: #{$default-screen - 1px})' // Máximo para telas grandes (Full HD)
+$notmobile      = '(min-width: #{$tablet-medium-screen}), (min-height: #{$tablet-medium-screen})' // Para dispositivos maiores que tablet
+
+$desktop-large  = 'only screen and (max-width: #{$desktop-large-screen - 1px})' // Máximo para desktops grandes
+$desktop-medium = 'only screen and (max-width: #{$desktop-medium-screen - 1px})' // Máximo para desktops médios
+$desktop-small  = 'only screen and (max-width: #{$desktop-small-screen - 1px})' // Máximo para desktops pequenos
+
+$tablet-large   = 'only screen and (max-width: #{$tablet-large-screen - 1px})' // Máximo para tablets grandes
+$tablet-medium  = 'only screen and (max-width: #{$tablet-medium-screen - 1px})' // Máximo para tablets médios
+$tablet-small   = 'only screen and (max-width: #{$tablet-small-screen - 1px})' // Máximo para tablets pequenos
+
+$mobile-large   = 'only screen and (max-width: #{$mobile-large-screen - 1px})' // Máximo para smartphones grandes
+$mobile-medium  = 'only screen and (max-width: #{$mobile-medium-screen - 1px})' // Máximo para smartphones médios
+$mobile-small   = 'only screen and (max-width: #{$mobile-small-screen - 1px})' // Máximo para smartphones pequenos
+
+$gt-desktop-medium = 'only screen and (min-width: #{$desktop-medium-screen})' // Para telas grandes acima do tamanho médio

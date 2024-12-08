@@ -1,0 +1,55 @@
+.home
+    display flex
+    flex-direction column
+    justify-content space-between
+    padding 0 40% 4% 4%
+    gap 2rem
+
+    &__title
+        padding-top 4rem
+        font-size 3rem
+        font-weight bold
+        color $primary-color-dark
+        line-height 3.1rem
+
+    &__subtitle
+        font-weight 600
+
+    &__options
+        display flex
+        flex-direction column
+        gap 1rem
+
+    .home__img
+        position absolute
+        bottom 0
+        right 0
+        max-height 80%
+        max-width: 55%
+        z-index -1
+
+@media only screen and (max-width: $tablet-small-screen)
+    .home
+        padding 0 20% 4% 4%
+
+        &__title
+            padding-top 1rem
+            font-size 2.5rem
+            line-height 2.6rem
+
+        &__subtitle
+            width 75%
+
+@media only screen and (max-width: 600px)
+    .home
+        padding 0 5% 5% 5%
+        align-items center
+        gap 1rem
+        text-align center
+        height: 100%
+
+        .home__img
+            margin-left -50px
+            position relative
+            order -1
+       
