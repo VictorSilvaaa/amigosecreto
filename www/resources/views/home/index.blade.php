@@ -17,7 +17,7 @@
             <p class="button__text">Encontrar Grupo</p>
         </a>
     
-        <a class="button bg-secondary" href="#">
+        <a class="button bg-secondary" href="{{route('group.create')}}">
             <div class="button__icon bg-secondary-dark">
                 <img src="{{ asset('assets/imgs/icons/present.svg')}}" alt="">
             </div>
