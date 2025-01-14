@@ -10,7 +10,7 @@
             <label class="col-lg-2 col-form-label text-right"></label>
             <div class="col-lg-4">
                 <button id="add-item" class="btn btn-sm font-weight-bolder btn-light-primary">
-                    <i class="la la-plus"></i>Adicionar {{$name??'Item'}}
+                    <img src="{{ asset('assets/imgs/icons/add_icon.svg') }}" alt="Remover">
                 </button>
             </div>
         </div>

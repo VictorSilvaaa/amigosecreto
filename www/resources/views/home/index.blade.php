@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('header')
+    <x-header></x-header>
+@endsection
+
 @section('content')
 
 

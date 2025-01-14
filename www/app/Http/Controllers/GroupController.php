@@ -11,8 +11,8 @@ class GroupController extends Controller
         return view('group.create');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        return response()->json('criado com sucesso!');
+        return response()->json(['criado com sucesso!', $request->all()]);
     }
 }

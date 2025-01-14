@@ -1,9 +1,15 @@
 @extends('layout')
 
+@section('styles')
+    <link href="{{ mix('assets/css/bootstrap.css') }}" rel="stylesheet">
+@endsection
+
 @section('header')
-    <a href="{{ url()->previous() }}">
-        <img src="{{ asset('assets/imgs/icons/arrow_back.svg') }}" alt="Voltar">
-    </a>
+    <x-header>
+        <a href="{{ url()->previous() }}">
+            <img src="{{ asset('assets/imgs/icons/arrow_back.svg') }}" alt="Voltar">
+        </a>
+    </x-header>
 @endsection
 
 @section('content')
@@ -24,7 +30,7 @@
             <x-form-repeat name="Participante" excludeLastItem="false" exclusiveSelection="true" canEdit="true" :initVisibleOption="false">
                 <x-repeater-item canEdit="true">
                     <div class="group-create__participant">
-                        <input class="group-create__participant-input" type="text" name="participants[]" placeholder="Nome do participante" required>
+                        <input class="group-create__participant-input" type="text" name="participants[]" placeholder="Nome do participante">
                     </div>
                 </x-repeater-item>
             </x-form-repeat>            
@@ -44,3 +50,5 @@
         const participantsContainer = document.getElementById('participants');
     </script>
 @endsection
+
+

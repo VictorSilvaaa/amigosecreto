@@ -1,6 +1,8 @@
 {
     "/assets/js/app.js": "/assets/js/app.js",
     "/assets/css/main.css": "/assets/css/main.css",
+    "/assets/css/bootstrap.css": "/assets/css/bootstrap.css",
+    "/assets/imgs/icons/add_icon.svg": "/assets/imgs/icons/add_icon.svg",
     "/assets/imgs/icons/arrow_back.svg": "/assets/imgs/icons/arrow_back.svg",
     "/assets/imgs/icons/glass.svg": "/assets/imgs/icons/glass.svg",
     "/assets/imgs/icons/present.svg": "/assets/imgs/icons/present.svg",

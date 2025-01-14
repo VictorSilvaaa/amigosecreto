@@ -1,11 +1,13 @@
 
 const mix = require("laravel-mix");
 
-mix.stylus("resources/stylus/main.styl", "public/assets/css").options({
-    processCssUrls: false,
-});
-mix.copy("resources/imgs", "public/assets/imgs");
-mix.js("resources/js/app.js", "public/assets/js/app.js");
+mix
+    .stylus("resources/stylus/main.styl", "public/assets/css").options({
+        processCssUrls: false,
+    })
+    .sass("resources/css/app.scss", "public/assets/css/bootstrap.css")
+    .copy("resources/imgs", "public/assets/imgs")
+    .js("resources/js/app.js", "public/assets/js/app.js")
 
 mix.webpackConfig((webpack) => {
     return {
